@@ -1,6 +1,6 @@
 # AdventCode23
 Solutions of advent code 2023
-- Day 1
+- Day 1 [x]
 - Day 2
 - Day 3
 - Day 4
