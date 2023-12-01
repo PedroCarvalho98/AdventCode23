@@ -1,2 +1,2 @@
 # AdventCode23
-Codes implemented for the Advent of Code 2023
+Solutions of advent code 2023
