@@ -78,12 +78,12 @@ regex = r'(\w{3}) = \((\w{3}), (\w{3})\)'
 for node, left, right in re.findall(regex, connections):
     graph[node] = [left, right]
 
-starting_nodes = [node for node in data_dict if node[2] == 'A']
+starting_nodes = [node for node in graph if node[2] == 'A']
 
 cycles = []
 for node in starting_nodes:
     for steps, d in enumerate(cycle(directions), start=1):
-        node = data_dict[node][d]
+        node = graph[node][d]
         if node[2] == 'Z':
             cycles.append(steps)
             break
